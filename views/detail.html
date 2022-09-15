@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="/public/css/detail.css">
+    <title>Detail</title>
+</head>
+<body>
+    <header>
+        <a href="/views/index.html" class="logo">
+            <img class="img-thumbnail" src="/public/images/logopng.png" />
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/" class="active">Accueil</a></li>
+                <li><a href="/#contact">Contact</a></li>
+                <li><a href="/connexion">Mon compte</a></li>
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+        <div class="trait-blue"></div>
+        <div class="container-fluid">
+              
+            <div class="container">
+                <div class="texte">
+                    <p>Location Appartement 100 m2, Abidjan Cocody-angre </p>
+                </div>
+                <div class="ImageHeader">
+                    <div class="image">
+                        <img src="/public/images/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-info">
+                <div class="info-right">
+                    <h1 class="info-texte">LOCATION Appartement Abidjan</h1>
+                    <h3  class="info-texte">Cocody-angre - Immeuble</h3>
+                    <p  class="info-texte">Appartement 3pieces</p>
+                    <div class="icon">
+                        <div class="icon-content">
+                            <i class="fas fa-door-closed"></i>
+                            <samp> 5 chambres </samp>
+                        </div>
+                        <div class="icon-content">
+                            <i class="fas fa-bath"></i>
+                            <samp> 3 douches</samp>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-content">
+                          <i class="fas fa-window-frame"></i>
+                            <samp> 3 pieces</samp>
+                        </div>
+                        <div class="icon-content">
+                             <i class="fas fa-expand"></i>
+                            <samp> 100 m2</samp>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-left">
+                    <h5>Loyer 500.000 F CFA/mois charges comprises</h5>
+                </div>
+            </div>
+            <div class="container-desc">
+                <div class="description">
+                    <h5>Description du bien</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea at quam accusantium consectetur amet. Numquam ratione placeat et illum vel.</p>
+                </div>
+                <div id="trait_dessus">
+                    <!-- <hr> -->
+                </div>
+                <div class="plus-biens">
+                    <h5>Les + du bien</h5>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nam.</p>
+                </div>
+                <div id="trait_dessus">
+                    <!-- <hr> -->
+                </div>
+                <div class="proximite">
+                    <h5>Services à proximité</h5>
+                    <p>Lorem ipsum dolor sit amet. </p>
+                </div>
+            </div>
+            <div class="container-image">
+              
+                <div class="Images">
+                    <img src="/public/images/2.jpg" alt="">
+                </div>
+            
+            </div>
+          
+            <div class="container-message">
+                <h3>Pour plus de detail contactez-nous</h3>
+                <div class="message">
+                  
+                    <form action="/contact " method="post">
+                        <input type="text" name="nom" placeholder="Nom">
+                        <input type="email" name="email" placeholder="Adresse Email">
+                        <input type="tel" name="numero" placeholder="Numero">
+                        <textarea name="description" id="" cols="41" rows="6" >Bonjour,J'ai vu votre annonce sur le site Je souhaiterais obtenir des informations complémentaires sur ce bien et, éventuellement, convenir d'un rendez-vous pour une visite
+ Merci, par avance, de bien vouloir me contacter dès que possible.
+Cordialement,
+</textarea>
+                        <input type="hidden" name="idbien" value="<%= bien.id %>">
+                        <button type="submit" value="Submit">Demander des infos</button>
+                    </form>
+        
+                </div>
+            </div>
+        </div>
+   
+    <script src="https://kit.fontawesome.com/0eca8d30fc.js" crossorigin="anonymous"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+</html>
