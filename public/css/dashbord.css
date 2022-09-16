@@ -57,6 +57,8 @@ nav p:hover  {
     bottom: 0%;
 }
 
+
+
 .content{
     border: 1px solid black;
     width: 85%;
@@ -91,28 +93,38 @@ input{
     color: #2288ff;
     background-color: white;
 }
+/* contenu debut */
 .contenu{
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .boutton{
-   border: 1px solid black;
+   margin-top: 10px;
     text-align: center;
-    /* border: none; */
-    background-color: #2288ff;
-    color: white;
-    border-radius: 5px;
-    font-size: 23px;
-    margin-top: 10px;
-}
-.boutton p {
-    color: white;
-    text-decoration: none;
+    border: 1px solid;
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        font-size: 17px;
+        background-color: #2288ff;
+        color: white;
     font-family: 'Roboto Serif', serif;
 }
 
+
 .boutton:hover{
     background-color: white;
+    color: #2288ff;
     border: 1px solid #2288ff;
     cursor: pointer;
 }
+
+.contenu_card{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+/* contenu fin */

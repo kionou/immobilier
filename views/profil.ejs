@@ -73,18 +73,7 @@
         <% }); %>
     </div>
 <% success.forEach(function(user){ %>
-    <div class="modal-container" id="modal">
-        <div class="modal">
-            <!-- <i class="fas fa-heart"></i> -->
-            <p>Etre vous sure de voulois supprimer votre compte.</p>
-            <div class="boutton">
-                <button class="btnredirect" onclick="non()">Non</button>
-                <button  onclick="supp('<%= user.id %>')" class="btnredirect" >Oui</button>
     
-            </div>
-            <i id="closer" class="fas fa-times"></i>
-        </div>
-    </div>
     <% }); %>
 
    
